@@ -1,0 +1,14 @@
+
+<ul class="nav nav-pills">
+	<li ng-class="active">
+		<a ui-sref="main.shows">Back To TV Shows</a>
+	</li>
+</ul>
+
+<div class="row col-lg-12" ng-controller="showsCtrl">
+	<a class="thumbnail">
+		<h3 class="text-center">{{x.Name}}</h3>
+		<h3 class="text-left">{{x.City}}</h3>
+		<h3 class="text-right">{{x.Country}}</h3>
+	</a>
+</div>

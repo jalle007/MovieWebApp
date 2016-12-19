@@ -1,0 +1,20 @@
+<ul class="nav nav-pills">
+	<li ng-class="active">
+		<a ui-sref="main.movies">Movies</a>
+	</li>
+	<li ng-class="active">
+		<a ui-sref="main.shows">TV Shows</a>
+	</li>
+</ul>
+
+<div class="row col-lg-12">
+	<div class="input-group">
+	    <span class="input-group-btn">
+			<button class="btn btn-default" type="button">Go!</button>
+		</span>
+		<input class="form-control" type="text" ng-model="searchString" placeholder="Enter your search terms" />
+	</div>
+</div>
+
+
+<div ui-view></div>

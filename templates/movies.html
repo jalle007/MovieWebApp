@@ -1,0 +1,13 @@
+
+<div class="row col-lg-12" ng-controller="movieCtrl">
+	<div class="col-md-6"  ui-sref-active="selected" ng-repeat="movie in movies | orderBy: '-rate' | filter:searchString | limitTo:10">
+		<a  href=""  ui-sref="main.movieinfo({ id: movie.id })" class="thumbnail">
+			<!--<a  href="moviewebapp/movie/{{movie.id}}"    class="thumbnail">-->
+
+				<!--<h3 class="text-center">{{movie.id}}</h3>-->
+		<h3 class="text-center">{{movie.title}}</h3>
+		<img src= "http://image.tmdb.org/t/p/w154{{movie.poster_path}}"/>
+		</a>
+	</div>
+</div>
+ 
